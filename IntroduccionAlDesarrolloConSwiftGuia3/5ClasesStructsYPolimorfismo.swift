@@ -8,7 +8,7 @@ protocol Empleado{
   func calcularSalario() -> Double
 }
 
-class EmpleadoBase : Empleado {
+class EmpleadoBase : Empleado { // Tipo con semantica de referencia implica pasar la instancia de un objeto A a un objeto B y visceversa
     var salarioBase : Double
 
   init (salarioBase : Double){
@@ -20,7 +20,8 @@ class EmpleadoBase : Empleado {
   }
 }
 
-struct EmpleadoContrato : Empleado{
+// Todos tipo primitivo es semantica de valor
+struct EmpleadoContrato : Empleado{ // Tipo con semantica de valor
   var tarifaHora : Double
   var horasTrabajadas : Double
 
