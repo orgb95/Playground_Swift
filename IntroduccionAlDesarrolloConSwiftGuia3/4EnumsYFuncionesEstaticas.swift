@@ -14,6 +14,8 @@ enum OperacionMatematica {
 }
 
 class OperadorMatematico {
+    // Una función estática se diferencia a una función es que una función normal debe ser instanciada antes de mandarla a llamar
+    // 
     static func realizarOperacion (a : Double, b : Double, operacion : OperacionMatematica) -> Double{
         switch operacion {
             case .suma:
